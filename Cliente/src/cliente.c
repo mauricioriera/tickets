@@ -42,10 +42,11 @@ int main(int argc, char** argv) {
 				error("send");
 			}
 
-			recv(sockid, buffer, BUF_SIZE, 0);
+			int c=recv(sockid, buffer, BUF_SIZE, 0);
 			if (count < 0) {
                 		error("recv");
             		}
+            *(buffer + c)="\0";
 			listarTickets(buffer);
 			
 
