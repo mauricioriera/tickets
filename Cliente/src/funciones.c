@@ -39,8 +39,8 @@ char * ingresarTicket(int op, char id_ticket[]) {
 
 void listarTickets(char tickets[]) {
 
-		fprintf(stderr,"%s" ,tickets);
-		clean(tickets);
+	fprintf(stderr,"%s" ,tickets);
+	clean(tickets);
 }
 
 
